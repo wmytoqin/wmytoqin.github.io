@@ -1,0 +1,45 @@
+@media screen {
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body {
+  background-color: #eee;
+  font: 14px/1 "MicroSoft YaHei", sans-serif;
+}
+
+section {
+  position: relative;
+}
+section:after {
+  content: ""; 
+  position: absolute;
+  height: 1px;
+  display: block;
+  clear: both;
+}
+
+input, button, select {
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+ text-decoration: none;
+}

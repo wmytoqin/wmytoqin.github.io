@@ -62,8 +62,8 @@ export default {
 
 .time_list {
   padding: 20px 20px 60px 20px;
-  width: calc(100% - 20px*2);
-  height: calc(100% - 150px);
+  width: calc(100% - 20px*2) !important;
+  height: calc(100% - 150px) !important;
   overflow: hidden;
   .time_overflow {
     overflow: auto;

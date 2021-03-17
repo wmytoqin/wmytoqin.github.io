@@ -1,15 +1,14 @@
 <template>
-  <section>
 
     <el-carousel :interval="4000" type="card">
       <el-carousel-item
         v-for="(item,index) in sortList" :key="index"
+        @click="TitleClick(item,index)"
       >
         <h3 class="medium"> {{ item }} </h3>
       </el-carousel-item>
     </el-carousel>
 
-  </section>
 </template>
 
 <script>
@@ -49,6 +48,13 @@ export default {
         }
       })
     })
+  },
+  methods: {
+    /* swiper点击 */
+    TitleClick(item,index) {
+      console.log(item)
+      console.log(index)
+    }
   }
 }
 </script>
@@ -56,6 +62,9 @@ export default {
 <style lang="scss">
 @import "../assets/scss/index.scss";
 
+.el-carousel__item {
+  height: 30px;
+}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;

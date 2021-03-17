@@ -10,6 +10,8 @@
         @changeComponent1Data="component1DataChange"
       ></hobby-sort>
 
+      <hobby-list :active="active"></hobby-list>
+
     </section>
     <!-- 导航条 -->
     <menu-component class="menu" :active="active"></menu-component>
@@ -19,13 +21,15 @@
 
 <script>
 import hobbySort from '../components/hobbySort'
+import hobbyList from '../components/hobbyList'
 import menuComponent from '../components/menu'
 
 export default {
   name: "hobby",
   components: {
     hobbySort,
-    menuComponent
+    menuComponent,
+    hobbyList
   },
   data() {
     return {

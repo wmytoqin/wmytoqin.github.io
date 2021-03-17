@@ -1,0 +1,13 @@
+/* page */
+@media screen and (min-width:1000px) {
+  .home_container {
+    margin: 0 auto;
+    width: 800px !important;
+    border-radius: 20px;
+  }
+}
+
+.home_container {
+  overflow: hidden;
+  box-shadow:rgba(0, 0, 0, 0.089) 0 0 10px;
+}

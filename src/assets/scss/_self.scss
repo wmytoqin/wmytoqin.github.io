@@ -1,0 +1,39 @@
+/*-- 自定义 --*/
+// 导航条 header
+$swiper_height: 150px;
+
+// 菜单栏 menu
+$menu_height: 60px;
+
+
+@mixin absolute0() {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// 文本溢出：一行
+@mixin ellipsis() {
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+// 文本溢出：两行
+@mixin multiline-ellipsis() {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

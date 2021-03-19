@@ -47,6 +47,7 @@ export default {
 .header {
   background-color: #7592BD;
   font-size: 0;
+  text-align: center;
 
   li {
     display: inline-block;

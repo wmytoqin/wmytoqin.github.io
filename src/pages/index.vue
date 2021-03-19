@@ -1,15 +1,19 @@
 <template>
   <section>
-
-      index
     
+    <interest-header></interest-header>
+
   </section>
 </template>
 
 <script>
+import interestHeader from '../components/interestHeader'
 
 export default {
   name: "index",
+  components: {
+    interestHeader
+  },
   data() {
     return {
     }

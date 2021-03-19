@@ -1,9 +1,6 @@
 /*-- 自定义 --*/
-// 导航条 header
-$swiper_height: 150px;
-
-// 菜单栏 menu
-$menu_height: 60px;
+// header
+$header_height: 40px;
 
 
 @mixin absolute0() {
